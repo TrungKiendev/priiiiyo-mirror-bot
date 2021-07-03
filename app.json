@@ -1,32 +1,36 @@
+
 {
-    "name": "priiiiyo-mirror-bot ",
-    "description": "A Telegram Bot which can mirror all your links to Google drive!",
-    "logo": "https://telegra.ph/file/9f79dea91ab7cda63dc46.jpg",
+    "name": "Python-Drive-Bot",
+    "description": "Telegram-Direct-Mirror to G-Drive",
+    "logo": "https://telegra.ph/file/e15e9ac9c5885b015e3ab.jpg",
     "keywords": [
-      "bot",
       "telegram",
+      "bot",
+      "aria",
       "python"
     ],
-    "repository": "https://github.com/priiiiyo/priiiiyo-mirror-bot",
-    "website": "https://t.me/PriiiiyoMirror",
-    "success_url": "https://github.com/priiiiyo/priiiiyo-mirror-bot/blob/master/README.md",
+    "repository": "https://github.com/ryugujiken/mirrorBotNew",
+    "website": "https://t.me/linux_repo",
+    "success_url": "https://t.me/linux_repo",
     "stack": "container",
     "env": {
       "ENV": {
-      "description": "Setting this to ANYTHING will enable Webhooks when in env mode",
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
       "value": "ANYTHING"
     },
       "BOT_TOKEN": {
         "description": "The telegram bot token that you get from @BotFather.",
+        "value": "1882115969:AAESTj6JTsi7l5K23E3DLZwGWO0flddcb7E",
         "required": true
       },
       "GDRIVE_FOLDER_ID": {
         "description": "This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.",
+        "value": "1QjXyoNtJJx1LEBCrxX-uLbDKs8X9CYyX",
         "required": true
       },
       "DOWNLOAD_DIR": {
         "description": "The path to the local folder where the downloads should be downloaded to.",
-        "value": "/home/priiiyo/mirror-bot/downloads",
+        "value": "/app/downloads",
         "required": false
       },
       "DOWNLOAD_STATUS_UPDATE_INTERVAL": {
@@ -35,47 +39,53 @@
         "required":false
       },
       "OWNER_ID": {
-        "description": "The Telegram User ID of the Owner of the Bot. Get it by using /info in @MissRose_bot.",
+        "description": "The Telegram user ID (not username) of the owner of the bot.",
+        "value": "1703879949",
         "required": true
       },
       "AUTO_DELETE_MESSAGE_DURATION": {
         "description": "Interval of time (in seconds), after which the bot deletes it's message (and command message) which is expected to be viewed instantly. Note: Set to -1 to never automatically delete messages.",
-        "required": true
+        "value": "-1",
+        "required": false
       },
       "IS_TEAM_DRIVE": {
         "description": "Set to 'True' if GDRIVE_FOLDER_ID is from a Team Drive else False or Leave it empty.",
+        "value": "True",
         "required": false
       },
       "USE_SERVICE_ACCOUNTS": {
-        "description": "Whether to use service accounts or not. For this to work see 'Using service accounts' in repo.",
-        "required": false
-      },
-      "AUTHORIZED_CHATS": {
-        "description": "Fill User ID and Chat ID of you want to authorize.",
+        "description": "Whether to use service accounts or not. For this to work see 'Using service accounts' section below.",
+        "value": "",
         "required": false
       },
       "INDEX_URL": {
         "description": "Refer to https://github.com/maple3142/GDIndex/ The URL should not have any trailing '/'.",
+        "value": "https://ok.draken.workers.dev/0:/",
         "required": false
       },
       "TELEGRAM_API": {
-        "description": "This is to authenticate to your telegram account for downloading Telegram files. You can get this from https://my.telegram.org.",
+        "description": "This is to authenticate to your telegram account for downloading Telegram files. You can get this from https://my.telegram.org DO NOT put this in quotes.",
+        "value": "3012719",
         "required": true
       },
       "TELEGRAM_HASH": {
         "description": "This is to authenticate to your telegram account for downloading Telegram files. You can get this from https://my.telegram.org.",
+        "value": "be3a9dc7a95f9860b98ff709f5cd57aa",
         "required": true
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from https://dashboard.heroku.com/account.",
+        "value": ""
         "required": true
       },
       "HEROKU_APP_NAME": {
         "description": "Add the Heroku app name here.",
+        "value": ""
         "required": true
       },
       "UPTOBOX_TOKEN": {
         "description": "Uptobox premium token to mirror uptobox links. Get it from https://uptobox.com/my_account.",
+        "value": ""
         "required": false
       },
       "MEGA_API_KEY": {
