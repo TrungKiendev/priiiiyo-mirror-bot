@@ -75,12 +75,12 @@
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from https://dashboard.heroku.com/account.",
-        "value": ""
+        "value": "436958e8-12d7-4603-ab66-aafeeddc75d4"
         "required": true
       },
       "HEROKU_APP_NAME": {
         "description": "Add the Heroku app name here.",
-        "value": ""
+        "value": "drakenmirror"
         "required": true
       },
       "UPTOBOX_TOKEN": {
