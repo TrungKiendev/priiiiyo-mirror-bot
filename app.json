@@ -1,4 +1,3 @@
-
 {
     "name": "Python-Drive-Bot",
     "description": "Telegram-Direct-Mirror to G-Drive",
@@ -73,91 +72,30 @@
         "value": "be3a9dc7a95f9860b98ff709f5cd57aa",
         "required": true
       },
-      "HEROKU_API_KEY": {
-        "description": "Your Heroku API key, get it from https://dashboard.heroku.com/account.",
-        "value": "436958e8-12d7-4603-ab66-aafeeddc75d4"
-        "required" : true
-      },
-      "HEROKU_APP_NAME": {
-        "description": "Add the Heroku app name here.",
-        "value": "drakenmirror"
-        "required": true
-      },
-      "UPTOBOX_TOKEN": {
-        "description": "Uptobox premium token to mirror uptobox links. Get it from https://uptobox.com/my_account.",
-        "value": ""
+      "TELEGRAPH_TOKEN": {
+        "description": "Open this link to generate telegraph token ==> https://telegraph-token.sonywegas.repl.run",
+        "value": "7612ed1202bb50bd5dd34f9ce726cb08af5d2b0c645b6332f5f98ce018b5",
         "required": false
       },
       "MEGA_API_KEY": {
-        "description": "Mega.nz api key to mirror mega.nz links. Get it from https://mega.nz/sdk.",
+        "description": "To authenticate Mega.",
+        "value": "",
         "required": false
       },
       "MEGA_EMAIL_ID": {
-        "description": "Your email id you used to sign up on mega.nz.",
+        "description": "Mega Email.",
+        "value": "",
         "required": false
       },
       "MEGA_PASSWORD": {
-        "description": "Your password for your mega.nz account.",
+        "description": "Mega Password.",
+        "value": "",
         "required": false
       },
-      "BLOCK_MEGA_FOLDER": {
-        "description": "If you want to remove mega.nz folder support, set it to True.",
-        "required": false
-      },
-      "BLOCK_MEGA_LINKS": {
-        "description": "If you want to remove mega.nz mirror support, set it to True.",
-        "required": false
-      },
-      "ENABLE_FILESIZE_LIMIT": {
-        "description": "Set it to True if you want to use MAX_TORRENT_SIZE.",
-        "value": "False",
-        "required": false
-      },
-      "MAX_TORRENT_SIZE": {
-        "description": "To limit the torrent mirror size, Fill The amount you want to limit, examples: if you fill 15 it will limit 15gb.",
-        "value": "15",
-        "required": false
-      },
-      "STOP_DUPLICATE_MIRROR": {
-        "description": "If this field is set to True, bot will check file in drive, if it is present in drive, downloading will be stopped.",
-        "required": false
-      },
-      "SHORTENER": {
-        "description": "If you want to use shortener in Gdrive and index link.",
-        "required": false
-      },
-      "SHORTENER_API": {
-        "description": "Fill your shortener api key if you are using shortener.",
-        "required": false
-      },
-      "IMAGE_URL": {
-        "description": "Show Image/Logo in /start message. Fill value of image your link image, use telegra.ph or any direct link image",
-        "value": "https://telegra.ph/file/db03910496f06094f1f7a.jpg",
-        "required": false
-       },
-      "BUTTON_THREE_NAME": {
-        "description": "Extra buttons (optional).",
-        "required": false
-      },
-      "BUTTON_THREE_URL": {
-        "description": "Fill your URL if you are using extra buttons.",
-        "required": false
-      },
-      "BUTTON_FOUR_NAME": {
-        "description": "Extra buttons (optional).",
-        "required": false
-      },
-      "BUTTON_FOUR_URL": {
-        "description": "Fill your URL if you are using extra buttons.",
-        "required": false
-      },
-      "BUTTON_FIVE_NAME": {
-        "description": "Extra buttons (optional).",
-        "required": false
-      },
-      "BUTTON_FIVE_URL": {
-        "description": "Fill your URL if you are using extra buttons.",
-        "required": false
+      "USER_SESSION_STRING": {
+        "description": "Open this link to generate session string ==> https://string-session.sonywegas.repl.run",
+        "value": "1AZWarzgBu6ES408ekedGgPMJ45jkvnsTaxDGi6l-RgbPLnqX_sloowAiLqO4qYds115He-E070rFZC57zY-ly3QcPWUMYaM1x6tpE90k8IyN6IY0CqX4HbC30WmsW9Zp7GPzrVzqb_JUHpyJ4MrAzkRhE0pBaf4U4qmWwOhHmcgpNSGyEvabEKCdQJO1jiMiJ4i2ljm20NzyUQpV4PuudvIdQe5xWivZ3OG9569ndHZGVuMlzc4wpRBDgw38TdHPXgPIzBqLKrAjTgKTTkW7VBW9B2zSykT3WYY-Bm_S8iHnYuNpk5ApZzdusi0PC0r__bHr7lVreR6jJJJwBrSfSpXrSWPdN20=",
+        "required": true
       }
     },
     "addons": [
